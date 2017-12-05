@@ -10,6 +10,7 @@ class Solution {
         return results;
     }
 
+    // return all permutations of elements whose visited are false 
     private void permute(int[] nums, boolean[] visited, List<Integer> current, List<List<Integer>> results) {
         if (current.size() == nums.length) {
             results.add(new ArrayList<Integer>(current));
